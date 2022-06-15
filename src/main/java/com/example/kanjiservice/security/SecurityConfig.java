@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final PasswordConfig passwordConfig;
     private final MyUserDetailService myUserDetailService;
 
-    @Value("securesecuresecuresecuresecuresecuresecuresecure")
+    @Value("${jwt.key}")
     private String key;
     @Value("1")
     private int days;
